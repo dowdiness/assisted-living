@@ -9,10 +9,10 @@ type Movies = {
 }
 
 const Home: React.FC<Movies> = ({ movies }) => (
-  <div className="container">
+  <div className="container mx-auto my-8">
     {movies.map((movie) => (
-      <div key={movie.id}>
-        <p>Name: {movie.movieName}</p>
+      <div key={movie.id} className="my-4">
+        <p className="text-xl">Name: {movie.movieName}</p>
         <p>Director: {movie.director}</p>
         <p>Year Released: {movie.yearReleased}</p>
       </div>
